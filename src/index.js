@@ -72,29 +72,29 @@ const retrieve = () => {
   }
 };
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
   if (addTask.value !== '') {
     const allTasks = new AllTask(addTask.value);
     allTasks.push(listDisplay);
   }
 });
 
-iconEnter.addEventListener('click', (e) => {
-  e.preventDefault();
+iconEnter.addEventListener('click', (event) => {
+  event.preventDefault();
   if (addTask.value !== '') {
     const allTasks = new AllTask(addTask.value);
     allTasks.push(listDisplay);
   }
 });
 
-clearFinished.addEventListener('click', (e) => {
-  e.preventDefault();
+clearFinished.addEventListener('click', (event) => {
+  event.preventDefault();
   removecompleted(listDisplay);
 });
 
-refresh.addEventListener('click', (e) => {
-  e.preventDefault();
+refresh.addEventListener('click', (event) => {
+  event.preventDefault();
   removeAll(listDisplay);
 });
 
