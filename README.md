@@ -36,11 +36,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome Books <a name="about-project"></a>
+# 📖 TO-DO List <a name="about-project"></a>
 
-A website for storing and retrieving books
+A website for organizing daily activities
 
-** [Awesome-books-ES6]** is a project(website) that Adds, removes and updates book information. the project was built using html, css, and js languages.
+["To-do-List"] :- is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. This simple website allows you to do manage you tasks. This Website is implemented using ES6 and Webpack.
 
 ## 🛠 Built With <a name="built-with">HTML,CSS and Javascript</a>
 
@@ -75,7 +75,8 @@ A website for storing and retrieving books
 
 - **[HTML]**
 - **[CSS]**
-- **[Javascript]**
+- **[Javascript]** ---> with ES6
+- **[Webpack]\***
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,7 +84,7 @@ A website for storing and retrieving books
 
 ## 🚀 Screenshot <a name="screenshot"></a>
 
-![image](https://user-images.githubusercontent.com/23375153/217803810-3a3d8691-267c-4303-a68a-76139ddc6d2f.png)
+![image](https://user-images.githubusercontent.com/23375153/221012988-791c6138-f87c-41e3-9a78-35ba4944ae8f.png)
 
 ## 💻 Loom Presentation Video <a name="loom-video"></a>
 
@@ -93,7 +94,7 @@ A website for storing and retrieving books
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://besufekad-haz.github.io/Awesome-books-ES6/)
+- [Live Demo Link](https://besufekad-haz.github.io/To-Do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,23 +107,26 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+
 -A Computer (MAC or PC)
 -code editor (VSCode,Atom etc...)
 -A browser (Chrome,Mozilla,Safari etc...)
 -Version Control System (Git and Github)
+-NodeJS (https://nodejs.org/en/)
+-Webpack {https://webpack.js.org}
 
 ### Setup
 
 Clone this repository to your desired folder:
 
 cd my-folder
-git clone git@github.com:Besufekad-HAZ/first-capstone-project.git (SSH)
+git clone git@github.com:Besufekad-HAZ/To-Do-list.git (SSH)
 
 ### Install
 
 Install this project with:
 
-npx init
+npx webpack init
 npm init -y
 npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x

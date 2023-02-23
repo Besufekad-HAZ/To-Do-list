@@ -1,9 +1,178 @@
-body {
-  background-color: rgb(169, 101, 18);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "lato", sans-serif;
 }
-.hello {
-  color: black;
-  background: url("./todo-img.jpg");
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: auto;
+  background: url(./todo.jfif);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 85% 95%;
+  background-position: center;
+}
+
+.to-do-container {
+  width: 60%;
+  max-width: 1000px;
+  margin: 6% auto 9%;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(5, 0, 0, 0.6);
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.title-container h1 {
+  text-decoration: underline;
+  font-size: calc(2.5rem + ((1vw - 1rem) * 2));
+}
+
+.icon__refresh {
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  gap: 2%;
+  color: black;
+}
+
+input,
+select,
+textarea {
+  color: #000;
+}
+
+form input {
+  padding: 3%;
+  color: black;
+}
+
+.all-tasks {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+}
+
+.icon_enter {
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  border-top: 1px solid rgb(237, 237, 237);
+  border-bottom: 1px solid rgb(237, 237, 237);
+  padding: 0.9rem;
+  font-size: 1.2em;
+  align-items: center;
+  align-content: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #00d184,
+      0 0 40px #00d184,
+      0 0 50px #00d184,
+      0 0 60px #00d184,
+      0 0 70px #00d184;
+  }
+
+  to {
+    text-shadow:
+      0 0 20px #fff,
+      0 0 30px #65f9c3,
+      0 0 40px #65f9c3,
+      0 0 50px #65f9c3,
+      0 0 60px #65f9c3,
+      0 0 70px #65f9c3,
+      0 0 80px #65f9c3;
+  }
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+li p {
+  width: 100%;
+  margin-left: 5px;
+}
+
+.draggable.dragging {
+  opacity: 0.1;
+  background-color: #7f8081;
+}
+
+.move_button {
+  cursor: move;
+}
+
+.btn-delete {
+  cursor: pointer;
+  display: none;
+}
+
+.rename_task {
+  background-color: rgb(134, 17, 34);
+  width: 90%;
+}
+
+#clear {
+  margin: 5% auto;
+  width: 50%;
+  padding: 3%;
+  height: auto;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  justify-self: center;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#clear:hover {
+  background-color: white;
+  color: black;
 }
