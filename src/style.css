@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(169, 101, 18);
+}
+.hello {
+  color: black;
+  background: url("./todo-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
