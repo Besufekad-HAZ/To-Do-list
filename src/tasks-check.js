@@ -13,7 +13,7 @@ export function checking(array) {
   });
 }
 
-export function listchekedstat (array) {
+export function listchekedstat(array) {
   array.forEach((tsk) => {
     const checkbox = document.getElementById(`${tsk.index}-checkbox`);
     if (tsk.completed === true) {

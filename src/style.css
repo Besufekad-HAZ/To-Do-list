@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #fff;
   font-family: "lato", sans-serif;
 }
 
@@ -43,7 +43,7 @@ body {
   justify-content: space-between;
   align-content: center;
   padding: 20px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .title-container h1 {
@@ -65,15 +65,15 @@ form {
   color: black;
 }
 
-form input {
-  padding: 3%;
-  color: black;
-}
-
 input,
 select,
 textarea {
   color: #000;
+}
+
+form input {
+  padding: 3%;
+  color: black;
 }
 
 .all-tasks {
@@ -107,12 +107,25 @@ li {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00d184,
-      0 0 40px #00d184, 0 0 50px #00d184, 0 0 60px #00d184, 0 0 70px #00d184;
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #00d184,
+      0 0 40px #00d184,
+      0 0 50px #00d184,
+      0 0 60px #00d184,
+      0 0 70px #00d184;
   }
+
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #65f9c3, 0 0 40px #65f9c3,
-      0 0 50px #65f9c3, 0 0 60px #65f9c3, 0 0 70px #65f9c3, 0 0 80px #65f9c3;
+    text-shadow:
+      0 0 20px #fff,
+      0 0 30px #65f9c3,
+      0 0 40px #65f9c3,
+      0 0 50px #65f9c3,
+      0 0 60px #65f9c3,
+      0 0 70px #65f9c3,
+      0 0 80px #65f9c3;
   }
 }
 
@@ -151,7 +164,6 @@ li p {
   width: 50%;
   padding: 3%;
   height: auto;
-  border: none;
   font-size: 20px;
   cursor: pointer;
   background-color: transparent;

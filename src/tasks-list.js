@@ -1,4 +1,4 @@
-export class All_Tasks {
+export class AllTask {
   constructor(description) {
     this.description = description;
     this.completed = false;
@@ -18,7 +18,9 @@ export function removecompleted(array) {
   array.forEach((tsk) => {
     if (tsk.completed === true) {
       tobeDeleted.push(tsk);
-      const filteredArray = array.filter((unique_task) => !tobeDeleted.includes(unique_task));
+      const filteredArray = array.filter(
+        (uniqueTask) => !tobeDeleted.includes(uniqueTask),
+      );
       filteredArray.forEach((tsk) => {
         tsk.index = filteredArray.indexOf(tsk);
       });
@@ -34,7 +36,7 @@ export function removeAll(array) {
   window.location.reload();
 }
 
-export function task_edit(array) {
+export function taskEdit(array) {
   array.forEach((tsk) => {
     const description = document.getElementById(`${tsk.index}-description`);
     const dragBtn = document.getElementById(`${tsk.index}-drag`);
@@ -57,13 +59,15 @@ export function task_edit(array) {
   });
 }
 
-export function task_remove(array) {
+export function taskRemove(array) {
   array.forEach((tsk) => {
     const tobeDeleted = [];
     const trashBtn = document.getElementById(`${tsk.index}-trash`);
     trashBtn.addEventListener('click', () => {
       tobeDeleted.push(tsk);
-      const filteredArray = array.filter((unique_task) => !tobeDeleted.includes(unique_task));
+      const filteredArray = array.filter(
+        (uniqueTask) => !tobeDeleted.includes(uniqueTask),
+      );
       filteredArray.forEach((tsk) => {
         tsk.index = filteredArray.indexOf(tsk);
       });
