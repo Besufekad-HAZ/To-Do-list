@@ -52,6 +52,7 @@ A website for organizing daily activities
     <li><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></li>
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
     <li><a href="https://www.javascript.com/">JavaScript</a></li>
+    <li><a href="https://webpack.js.org/">Webpack</a></li>
   </ul>
 </details>
 
@@ -76,7 +77,7 @@ A website for organizing daily activities
 - **[HTML]**
 - **[CSS]**
 - **[Javascript]** ---> with ES6
-- **[Webpack]\***
+- **[Webpack]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,7 +95,7 @@ A website for organizing daily activities
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://besufekad-haz.github.io/To-Do-list/)
+- [Live Demo Link](https://besufekad-haz.github.io/To-Do-list/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,6 +139,10 @@ To run tests, run the following command:
 To check Styelint error:-
 
 npx stylelint "\*_/_.{css,scss}"
+
+To check Eslint error:-
+
+npx eslint .
 
 ### Deployment
 
