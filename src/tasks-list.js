@@ -1,4 +1,4 @@
-export class AllTask {
+export default class AllTask {
   constructor(description) {
     this.description = description;
     this.completed = false;
@@ -76,3 +76,6 @@ export function taskRemove(array) {
     });
   });
 }
+
+module.exports = { removecompleted };
+module.exports = { AllTask };
